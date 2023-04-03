@@ -4,7 +4,8 @@
 '''A module for returning the sum of a list'''
 
 
-def sum_list(input_list: list[float]) -> float:
+from typing import List
+def sum_list(input_list: List[float]) -> float:
     '''A function thst returns the sum of a list'''
 
     total = 0.0
