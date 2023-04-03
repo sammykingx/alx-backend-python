@@ -9,7 +9,7 @@
 from typing import List, Union
 
 
-def sum_mixed_list(mxd_lst: List[Union[int | float]]) -> float:
+def sum_mixed_list(mxd_lst: List[Union[int, float]]) -> float:
     '''a type_annotated function that returns float sum of mxd_lst'''
 
     total = 0.00
