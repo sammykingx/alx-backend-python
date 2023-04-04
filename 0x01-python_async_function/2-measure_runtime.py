@@ -1,11 +1,11 @@
-#!usr/bin/env python3
+#!/usr/bin/env python3
 
 
 import asyncio
 import time
 
 
-''' From the previous file, import wait_n into 2-measure_runtime.py.
+'''From the previous file, import wait_n into 2-measure_runtime.py.
 
     Create a measure_time function with integers n and max_delay as arguments
     that measures the total execution time for wait_n(n, max_delay), and
@@ -16,9 +16,9 @@ import time
 
 
 def measure_time(n: int, max_delay: int) -> float:
-    ''' a function that measures the total time it takes
+    '''a function that measures the total time it takes
         to run wait_n func and divides the return by n then
-        returns the result
+        returns the result.
     '''
     wait_n = __import__('1-concurrent_coroutines').wait_n
 
