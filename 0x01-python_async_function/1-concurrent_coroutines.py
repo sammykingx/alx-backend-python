@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 
 
-import asyncio
 from typing import List
 
 
@@ -33,6 +32,8 @@ async def wait_n(n: int, max_delay: int) -> List[float]:
 
 
 if __name__ == '__main__':
+    import asyncio
+
     print(asyncio.run(wait_n(5, 2)))
     print(asyncio.run(wait_n(7, 4)))
     print(asyncio.run(wait_n(10, 0)))
