@@ -16,10 +16,7 @@ import time
 
 
 def measure_time(n: int, max_delay: int) -> float:
-    '''a function that measures the total time it takes
-        to run wait_n func and divides the return by n then
-        returns the result.
-    '''
+    '''returnsthe total time coroutines took to completion'''
     wait_n = __import__('1-concurrent_coroutines').wait_n
 
     start_time = time.time()

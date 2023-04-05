@@ -13,11 +13,7 @@ from random import uniform
 
 
 async def wait_random(max_delay: int = 10) -> float:
-    ''' The function genearates a random number from
-        0 to max_delay then uses delay as an argument
-        to sleep function and returns it ones time has
-        elaspsed
-    '''
+    '''Generates a random number and returns it after n delay'''
     delay = uniform(0, max_delay)
     await asyncio.sleep(delay)
     return delay
